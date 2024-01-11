@@ -1,0 +1,16 @@
+﻿  03_hand_extract_detection.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,26): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,34): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,42): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,33): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,40): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\03_hand_extract_detection.cpp(7,32): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\03_hand_extract_detection.cpp(7,26): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\03_hand_extract_detection.cpp(30,27): warning C4244: 'initializing': conversion from 'int64' to 'double', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\03_hand_extract_detection.cpp(57,25): warning C4244: 'initializing': conversion from 'int64' to 'double', possible loss of data
+  Generating code
+  1 of 373 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    6 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  cpp_for_unreal_project.vcxproj -> C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\x64\Release\02_virtual_piano.exe
