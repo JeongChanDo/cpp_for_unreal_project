@@ -1,2 +1,60 @@
 ﻿  01_python2cpp.cpp
-  cpp_for_unreal_project.vcxproj -> C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\x64\Debug\02_virtual_piano.exe
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,26): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,34): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,42): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,33): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,40): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\01_python2cpp.cpp(16,5): error C2065: 'CV2NanoDetONNX': undeclared identifier
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\01_python2cpp.cpp(16,20): error C2146: syntax error: missing ';' before identifier 'net'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\01_python2cpp.cpp(16,20): error C2065: 'net': undeclared identifier
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\01_python2cpp.cpp(16,26): error C2653: 'CV2NanoDetONNX': is not a class or namespace name
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\01_python2cpp.cpp(16,42): error C3861: 'CV2NanoDetONNX': identifier not found
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\01_python2cpp.cpp(34,5): error C2065: 'net': undeclared identifier
+  02_nanodet_test.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,26): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,34): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,42): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,33): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,40): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\02_nanodet_test.cpp(5,29): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\02_nanodet_test.cpp(5,23): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\02_nanodet_test.cpp(28,27): warning C4244: 'initializing': conversion from 'int64' to 'double', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\02_nanodet_test.cpp(42,25): warning C4244: 'initializing': conversion from 'int64' to 'double', possible loss of data
+  03_hand_extract_detection.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,26): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,34): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,42): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,33): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,40): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\03_hand_extract_detection.cpp(7,32): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\03_hand_extract_detection.cpp(7,26): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\03_hand_extract_detection.cpp(30,27): warning C4244: 'initializing': conversion from 'int64' to 'double', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\03_hand_extract_detection.cpp(57,25): warning C4244: 'initializing': conversion from 'int64' to 'double', possible loss of data
+  04_split_finger_by_edge.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,26): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,34): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,42): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,33): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,40): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\04_split_finger_by_edge.cpp(7,32): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\04_split_finger_by_edge.cpp(7,26): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\04_split_finger_by_edge.cpp(30,27): warning C4244: 'initializing': conversion from 'int64' to 'double', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\04_split_finger_by_edge.cpp(57,25): warning C4244: 'initializing': conversion from 'int64' to 'double', possible loss of data
+  NanoDet.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,26): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,34): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(22,42): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,33): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.h(23,40): warning C4305: 'initializing': truncation from 'double' to 'const float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.cpp(50,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.cpp(53,47): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.cpp(184,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.cpp(185,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\cpp_for_unreal_project\NanoDet.cpp(192,27): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+  test01_dot.cpp
+  test02_sortidx.cpp
+  Generating Code...

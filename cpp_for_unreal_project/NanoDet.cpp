@@ -18,7 +18,8 @@ NanoDet::NanoDet(int input_shape, float confThreshold, float nmsThreshold)
 	this->num_class = 1;
 	if (input_shape == 320)
 	{
-		this->net = readNet("nanodet_finger_v3_sim.onnx");
+		this->net = readNet("nanodet_finger_v4_sim.onnx");
+		//this->net = readNet("nanodet_finger_v4_sim.onnx");
 		//this->net = readNet("nanodet_finger_v3_sim_fp16.onnx");
 
 	}
@@ -60,6 +61,43 @@ Mat NanoDet::resize_image(Mat srcimg, int* newh, int* neww, int* top, int* left)
 	}
 	return dstimg;
 }
+
+Mat NanoDet::resize_image(Mat srcimg, bool keep_ratio)
+{
+	int srch = srcimg.rows, srcw = srcimg.cols;
+	int newh = this->input_shape[0];
+	int neww = this->input_shape[1];
+	int left, top;
+	Mat dstimg;
+
+	if (keep_ratio && srch != srcw)
+	{
+		float hw_scale = (float)srch / srcw;
+		if (hw_scale > 1)
+		{
+			newh = this->input_shape[0];
+			neww = int(this->input_shape[1] / hw_scale);
+			resize(srcimg, dstimg, Size(neww, newh), INTER_AREA);
+			left = int((this->input_shape[1] - neww) * 0.5);
+			copyMakeBorder(dstimg, dstimg, 0, 0, left, this->input_shape[1] - neww - left, BORDER_CONSTANT, 0);
+		}
+		else
+		{
+			newh = (int)this->input_shape[0] * hw_scale;
+			neww = this->input_shape[1];
+			resize(srcimg, dstimg, Size(neww, newh), INTER_AREA);
+			top = (int)(this->input_shape[0] - newh) * 0.5;
+			copyMakeBorder(dstimg, dstimg, top, this->input_shape[0] - newh - top, 0, 0, BORDER_CONSTANT, 0);
+		}
+	}
+	else
+	{
+		resize(srcimg, dstimg, Size(neww, newh), INTER_AREA);
+	}
+	return dstimg;
+}
+
+
 
 void NanoDet::normalize(Mat& img)
 {
@@ -249,13 +287,28 @@ std::vector<cv::Rect> NanoDet::get_color_filtered_boxes(cv::Mat image, cv::Mat& 
 
 	cv::bitwise_and(image, image, skin_image, skin_mask);
 	std::vector<cv::Rect> bounding_boxes;
+	std::vector<cv::Rect> sorted_bounding_boxes;
 
-	/*
+
 	std::vector<std::vector<cv::Point>> contours;
 	cv::findContours(skin_mask, contours, cv::RETR_EXTERNAL, cv::CHAIN_APPROX_SIMPLE);
 
-	cout << "bounding_boxes" << endl;
+	//cout << "bounding_boxes" << endl;
 
+
+	cv::Rect left_bbox;
+	cv::Rect right_bbox;
+
+	for (const auto& contour : contours) {
+		cv::Rect bounding_box = cv::boundingRect(contour);
+		if (bounding_box.width * bounding_box.height > 100 * 100) {
+			bounding_boxes.push_back(bounding_box);
+		}
+	}
+
+	sort(bounding_boxes.begin(), bounding_boxes.end(), compareRectByX);
+
+	/*
 	for (const auto& contour : contours) {
 		cv::Rect bounding_box = cv::boundingRect(contour);
 		if (bounding_box.width * bounding_box.height > 100 * 100) {
@@ -271,9 +324,48 @@ std::vector<cv::Rect> NanoDet::get_color_filtered_boxes(cv::Mat image, cv::Mat& 
 
 
 			bounding_boxes.push_back(bounding_box);
-			cout << bounding_box << endl;
+			//cout << bounding_box << endl;
 		}
 	}
 	*/
 	return bounding_boxes;
+}
+
+cv::Mat NanoDet::get_pad_hand(cv::Mat frame, std::vector<cv::Rect> color_boxes)
+{
+	Mat hmat, hmat_pad, hand1, hand2;
+
+	// get hand roi mat
+	if ((color_boxes.size() <= 2) && (color_boxes.size() >= 1))
+		hand1 = frame(color_boxes[0]);
+	if (color_boxes.size() == 2)
+		hand2 = frame(color_boxes[1]);
+
+	// make empty h_mat
+	if (color_boxes.size() == 2)
+	{
+		if (hand1.size().height > hand2.size().height)
+			hmat = Mat::zeros(hand1.size().height, hand1.size().width + hand2.size().width, CV_8UC3);
+		else
+			hmat = Mat::zeros(hand2.size().height, hand1.size().width + hand2.size().width, CV_8UC3);
+	}
+	else if (color_boxes.size() == 1)
+		hmat = Mat::zeros(hand1.size().height, hand1.size().width, CV_8UC3);
+
+	// crop roi
+	if ((color_boxes.size() <= 2) && (color_boxes.size() >= 1))
+	{
+		Rect hand1_roi = Rect(0, 0, hand1.size().width, hand1.size().height);
+		hand1.copyTo(hmat(hand1_roi));
+	}
+	if (color_boxes.size() == 2)
+	{
+		Rect hand2_roi = Rect(hand1.size().width, 0, hand2.size().width, hand2.size().height);
+		hand2.copyTo(hmat(hand2_roi));
+	}
+	// resize and pad
+	if (!hmat.empty())
+		hmat_pad = resize_image(hmat, true);
+	
+	return hmat_pad;
 }

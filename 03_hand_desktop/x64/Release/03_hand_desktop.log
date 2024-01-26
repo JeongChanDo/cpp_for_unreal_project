@@ -1,0 +1,109 @@
+﻿  04_blazehand.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(28,26): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(29,24): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(152,32): warning C4244: '=': conversion from '_Tp' to 'float', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(158,33): warning C4244: '=': conversion from '_Tp' to 'float', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(174,45): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(174,41): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(337,34): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(338,31): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(355,33): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(357,30): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(385,43): warning C4244: '=': conversion from '_Tp' to 'float', possible loss of data
+          with
+          [
+              _Tp=double
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(386,43): warning C4244: '=': conversion from '_Tp' to 'float', possible loss of data
+          with
+          [
+              _Tp=double
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(387,43): warning C4244: '=': conversion from '_Tp' to 'float', possible loss of data
+          with
+          [
+              _Tp=double
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(388,43): warning C4244: '=': conversion from '_Tp' to 'float', possible loss of data
+          with
+          [
+              _Tp=double
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(414,68): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=double
+          ]
+          and
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(414,54): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=double
+          ]
+          and
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(431,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(432,15): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(452,19): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(453,20): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(460,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(462,35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(465,21): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(468,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(580,29): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(580,26): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(595,47): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(595,37): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(595,76): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(595,68): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+  Generating code
+  6 of 554 functions ( 1.1%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
+    5 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  03_hand_desktop.vcxproj -> C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\x64\Release\03_hand_desktop.exe

@@ -44,5 +44,17 @@
     <ClCompile Include="03_hand_extract_detection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="04_split_finger_by_edge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="05_nail_detection_improve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="06_nail_detection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="07_hand_move_classification.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
