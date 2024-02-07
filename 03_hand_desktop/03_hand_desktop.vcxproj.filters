@@ -27,5 +27,17 @@
     <ClCompile Include="04_blazehand.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="05_matshapetest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="06_get_mouse_pos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="07_move_mouse_cursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="08_mouse_move_click.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

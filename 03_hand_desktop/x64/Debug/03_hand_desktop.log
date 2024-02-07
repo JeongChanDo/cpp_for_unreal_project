@@ -1,0 +1,9 @@
+﻿  01_rot_test.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\01_rot_test.cpp(1,10): fatal  error C1083: Cannot open include file: 'opencv2/opencv.hpp': No such file or directory
+  02_test2.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\02_test2.cpp(1,10): fatal  error C1083: Cannot open include file: 'opencv2/opencv.hpp': No such file or directory
+  03_blazepalm.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\03_blazepalm.cpp(1,10): fatal  error C1083: Cannot open include file: 'opencv2/opencv.hpp': No such file or directory
+  04_blazehand.cpp
+C:\Users\addinedu\Documents\GitHub\cpp_for_unreal_project\03_hand_desktop\04_blazehand.cpp(1,10): fatal  error C1083: Cannot open include file: 'opencv2/opencv.hpp': No such file or directory
+  Generating Code...
